@@ -1,13 +1,8 @@
 #print(12)
 import time
-from encodings import undefined
 
 from appium import webdriver
 from appium.webdriver.common.appiumby import AppiumBy
-from selenium.webdriver import ActionChains
-from selenium.webdriver.common.actions import interaction
-from selenium.webdriver.common.actions.action_builder import ActionBuilder
-from selenium.webdriver.common.actions.pointer_input import PointerInput
 from selenium.webdriver.common.by import By
 
 
@@ -85,9 +80,23 @@ time.sleep(5)
 
 #Mike click plus button to increase Qty by "2"
 
+ele_Done_xapth = driver.find_element(AppiumBy.ID,'com.nopstation.nopcommerce.nopstationcart:id/btnPlus')
+ele_Done_xapth.click()
+time.sleep(5)
+
+#new_Quantity = driver.find_element(AppiumBy.ID,'com.nopstation.nopcommerce.nopstationcart:id/tvQuantity').text
+#if new_Quantity  == 2:
+#	assert True
+#else:
+#	assert False
 
 #Then: Mike click add to cart button to add the product in his cart
+#driver.swipe(750,1500,750,900,300)
+#time.sleep(5)
 
+#ele_AddToCart_xapth = driver.find_element(AppiumBy.ID,'com.nopstation.nopcommerce.nopstationcart:id/btnPlus')
+#ele_AddToCart_xapth .click()
+#time.sleep(5)
 
 driver.quit()
 print("test completed")
