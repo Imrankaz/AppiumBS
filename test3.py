@@ -7,9 +7,6 @@ class addition1:  # class
        print(self.val1+self.val2)
 
 
-
-
-
-rahim = addition1()  # object declare
-rahim.set_value(101,3.50)
-rahim.display()
+obj = addition1()  # object declare
+obj.set_value(101,3.50)
+obj.display()
